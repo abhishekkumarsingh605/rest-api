@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rest Example</title>
+</head>
+<body>
+    <h1>Welcome to Rest API Examples:-</h1>
+    <h2>Following are the operation you can perform on the API</h2>
+    <ul>
+        <li>Create</li>
+        <p>To add an customer please provide name and email of the customer in the Html body 
+            and sent the post request e.g.</p>
+        <p>URI : https://restcrud.abhishekkumarsingh.now.sh/customer</p>
+        <p>
+                {
+                    "name":"John Doe",
+                    "email":"johndoe@xyz.com"
+                }
+        </p>
+        <li>Retrive</li>
+        <p>To retrive the data from the database use the below URI and sent the post request</p>
+        <p>URI : https://restcrud.abhishekkumarsingh.now.sh/customer?email="emailId"</p>
+        <li>Update</li>
+        <p>To update the Customer Data you can use PUT request with the name and email attributes in
+            the body of the request.
+        </p>
+        <p>URI : https://restcrud.abhishekkumarsingh.now.sh/customer</p>
+        <p>Body should be like:</p>
+        <p>
+            {
+                "name":"John Doe",
+                "email":"johndoe@xyz.com"
+            }
+        </p>
+        <li>Delete</li>
+        <p>To delete the perticular user pass the user email in the query parameter with delete request</p>
+        <p>URI : https://restcrud.abhishekkumarsingh.now.sh/customer?email="emailId"</p>
+    </ul>
+</body>
+</html>

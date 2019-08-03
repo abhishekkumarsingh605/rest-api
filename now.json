@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "rest_crud",
+  "builds": [
+    { "src": "public/**/*", "use": "@now/static" },
+    { "src": "src/routes/*.js", "use": "@now/node-server"},
+    { "src": "src/models/*.js", "use": "@now/node-server"},
+    { "src": "src/index.js", "use": "@now/node-server"}
+  ],
+  "routes": [{ "src": "/", "dest": "public/index.html" },
+    { "src": "/person", "dest": "src/index.js" },
+    { "src": "/customer", "dest": "src/index.js" }
+    ]
+}
